@@ -3,7 +3,6 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 import { globalHistory, useLocation } from '@reach/router'
 import cx from 'classnames'
 
-import GraphCMSLogo from '../svg/logo.svg'
 import GraphCMSMark from '../svg/mark.svg'
 import Transition from './transition'
 
@@ -38,8 +37,7 @@ function Header() {
         <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div className="flex items-center justify-between w-full md:w-auto">
             <Link to="/" aria-label="GraphCMS Gatsby Blog Starter">
-              <GraphCMSLogo className="hidden sm:block h-10" />
-              <GraphCMSMark className="h-10 sm:hidden" />
+              <div className="font-semibold text-xl">nor1c.xyz</div>
             </Link>
             <div className="-mr-2 flex items-center md:hidden">
               <button
