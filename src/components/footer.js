@@ -18,9 +18,9 @@ const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="bg-gray-800">
+    <footer className="bg-purple-700">
       <div className="flex flex-col md:flex-row items-center md:justify-between py-6 max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-5xl space-y-6 md:space-y-0">
-        <p className="text-gray-300 text-sm"></p>
+        <p className="text-gray-300 text-sm">Powered by <a className="text-white" href="https://www.gatsbyjs.com/">GatsbyJS</a> & <a className="text-white" href="https://graphcms.com/">GraphCMS</a>, hosted on <a className="text-white" href="https://vercel.com">Vercel</a></p>
         <ul className="inline-flex space-x-6">
           {socialLinks.map(({ Component, href, title }, index) => (
             <li key={index}>

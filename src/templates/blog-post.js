@@ -3,10 +3,13 @@ import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+
 function BlogPostTemplate({
   data: { authorImage, coverImage },
   pageContext: { nextPost, page, previousPost },
 }) {
+  deckDeckGoHighlightElement();
   return (
     <article>
       <header className="pt-6 lg:pb-10">
@@ -14,13 +17,13 @@ function BlogPostTemplate({
           <dl className="space-y-10">
             <div>
               <dt className="sr-only">Published on</dt>
-              <dd className="text-base leading-6 font-medium text-gray-500">
+              <dd className="text-sm leading-6 font-medium text-gray-500">
                 <time dateTime={page.date}>{page.date}</time>
               </dd>
             </div>
           </dl>
           <div>
-            <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+            <h1 className="text-lg leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
               {page.title}
             </h1>
           </div>
@@ -62,7 +65,7 @@ function BlogPostTemplate({
               fadeIn={false}
             />
           )}
-          <div className="prose max-w-none pt-10 pb-8">
+          <div className="prose max-w-none pt-10 pb-8 text-sm">
             <MDXRenderer>{page.content.markdownNode.childMdx.body}</MDXRenderer>
           </div>
         </div>

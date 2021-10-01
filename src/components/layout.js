@@ -3,6 +3,8 @@ import React from 'react'
 import Footer from './footer'
 import Header from './header'
 import SEO from './seo'
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 function Layout({ children, pageContext: { page } }) {
   return (
