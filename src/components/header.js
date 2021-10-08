@@ -33,12 +33,17 @@ function Header() {
 
   return (
     <header className="py-10 relative">
-      <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
-        <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-          <div className="flex items-center justify-between w-full md:w-auto">
+      <nav className="relative flex items-center justify-between w-full sm:h-10 lg:justify-start">
+        <div className="flex items-center flex-grow">
+          <div className="flex flex-grow items-center justify-between w-full">
             <Link to="/" aria-label="GraphCMS Gatsby Blog Starter">
-              <div className="font-semibold text-xl">nor1c.xyz</div>
+              <div className="font-semibold text-lg">nor1c's blog</div>
             </Link>
+            <div className="flex flex-row text-xs items-center">
+              <Link to="/about" className="ml-4">
+                <div className="hover:text-purple-700 transition-all duration-200">/about</div>
+              </Link>
+            </div>
             <div className="-mr-2 flex items-center md:hidden">
               <button
                 onClick={() => toggleMobileNavOpen()}

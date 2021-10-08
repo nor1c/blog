@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: 'GraphCMS Blog',
+    title: 'nor1c\'s blog',
     description:
       'Gatsby blog starter for GraphCMS! Powered by `gatsby-source-graphcms`, featuring `gatsby-image` and MDX!',
     keywords: 'Headless CMS, GraphCMS, GraphQL CMS, Gatsby',

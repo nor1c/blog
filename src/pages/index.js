@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 function IndexPage({ data: { allGraphCmsPost } }) {
   return (
     <div className="divide-y divide-gray-200">
-
       <ul className="divide-y divide-gray-200">
         {allGraphCmsPost.nodes.map((post) => {
           return (
