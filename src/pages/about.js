@@ -14,7 +14,7 @@ function AboutPage() {
         </div>
         <div className="mb-4">
           <div>
-            <b>stacks:</b> <span className="text-blue-700">Codeigniter/Laravel</span>, <span className="text-yellow-400">Typescript/Vue/Nuxt/Express/PrismaORM</span>, Tailwind/BootstrapCSS, MySQL/MongoDB, Flutter, <span className="text-indigo-700">Docker, CI/CD, Server Management</span>, TDD, DDD, Repository Pattern, OOP/FP
+            <b>stacks:</b> <span className="text-blue-700">Codeigniter/Laravel</span>, <span className="text-yellow-400">Typescript/Vue/Nuxt/Express/PrismaORM</span>, Tailwind/Bootstrap, MySQL/Mongo, Flutter, <span className="text-indigo-700">Docker, CI/CD</span>
           </div>
         </div>
         <div className="text-xs">
